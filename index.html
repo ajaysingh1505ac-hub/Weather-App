@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#eaf3ff">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <p class="eyebrow">YOUR LOCAL FORECAST</p>
+        <h1>Weather <span aria-hidden="true">☀️</span></h1>
+        <p class="intro">Find current weather conditions for any city.</p>
+
+        <form id="weather-form">
+            <label class="sr-only" for="city">City name</label>
+            <input
+                type="search"
+                id="city"
+                name="city"
+                placeholder="Enter a city name"
+                autocomplete="off"
+                required
+            >
+            <button type="submit">Search</button>
+        </form>
+
+        <section id="result" class="result" aria-live="polite" aria-atomic="true">
+            <p class="message">Enter a city to check its weather.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
